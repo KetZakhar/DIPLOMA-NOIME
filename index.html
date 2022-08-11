@@ -9,61 +9,64 @@
 </head>
 <body>
 
-  <!-- <div class="popup">
-  
+<!-- 
+   <form class="popup">
+    <div class="popup-container">
 
-    <div class="popup_container">
-     
-        <div class="popup_content">
+      <button class="popup-close" type="button">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
 
-             
-      <h1 class="feedback_title">Ваш фидбек</h1> 
-                           
-        <div class="feedback_question">
-   <span class="popup_span">Как часто вы заходите на сайт?</span>
-            
-        <select class="select_feedback">
-            <option selected>Почти каждый день</option>
-            <option >Раз в неделю</option>
-            <option>Раз в месяц</option>
-          </select>
-          
+      <div class="feedback">
+        
+        <div class="feedback-wrapper">
+          <h2 class="feedback-title">Ваш фидбек</h2>
         </div>
-
-          <div class="form-row_e-mail">
-            <div class="popup_span_e-mail"> 
-            <span class="popup_span_e-mail">Вы подписанны на e-mail рассылку?</span> 
-          </div>
-           <form action="e-mail">
-          <label class="radio-group">
-              <input type="radio" class="radio" name="radio-group">
-              <span class="radio-group-text">Да</span>
+        
+        <div class="feedback-form">
+          <div class="form-row form-list">
+            <label class="form-group">
+              <span class="form-hint">Как часто вы заходите на сайт?</span>
+              <select class="select">
+                <option selected>Почти каждый день</option>
+                <option>Раз в несколько дней</option>
+                <option>Раз в несколько недель</option>
+                <option>Несколько раз в год</option>
+              </select>
             </label>
-            <label class="radio-group">
-              <input type="radio" class="radio" name="radio-group">
-              <span class="radio-group-text">Нет</span>
-            </label>	
-          </form>
-          </div>	
-  
-  <div class="recomendation">
-    <span class="popup_span">Расскажите, какой контент вы хотели бы видеть на нашес сайте?</span>
-                
-               <form class="form_feedback_recomendation">
-            <label>
-          <input type="text" class="field_recomendation" placeholder="Может, больше рецептов?">
+          </div>
+          
+          <div class="form-row form-radio">
+            <span>Вы подписаны на e-mail рассылку?</span>
+            <div class="radio-form" required>
+              <label class="radio-group">
+                <input type="radio" class="radio" name="radio-group">
+                <span class="radio-group-text">Да</span>
               </label>
-               </form>
+              <label class="radio-group">
+                <input type="radio" class="radio" name="radio-group">
+                <span class="radio-group-text">Нет</span>
+              </label>
             </div>
-         
+          </div>
 
-      <button class="mail-button_feedback" alt="кнопка отправить">
-         <span class= "mail-button-text" class="hidden">Отправить</span>
-         </button>
-         </form>
+          <div class="form-group form-field">
+            <label class="field-group">
+              <span class="field-label">Расскажите, какой контент вы хотели бы видеть
+                на нашем сайте?</span>
+              <textarea class="field textarea" placeholder="Может, больше рецептов?" required></textarea>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <button class="feedback-button">Отправить</button>
+          </div>
+
         </div>
-        </div>
-      </div> -->
+
+      </div>
+    </div>
+  </form> --> -->
 
 
    
@@ -93,12 +96,9 @@
         </div>
         </div>
     </header>
+        <h2 class="trands_open">Сейчас в тренде</h2>
 
-  
-        
-            <h2 class="trands_open">Сейчас в тренде</h2>
-
-<aside class="trands_top">
+<div class="trands_top">
 
 
  <article class="trand_1_top trand_open">
@@ -114,7 +114,10 @@
             
 
         <div class="trands_top_content">
-            <a href="#" class="trands_top_content">Cейчас в тренде: сад на подоконнике</a>
+
+          <h2 class="trands-name">
+            <a class="trends-link" href="#0">Cейчас в тренде: сад на подоконнике </a> </h2>
+      
                 </div>
             </div>
     
@@ -130,7 +133,8 @@
                         </ul>
 
         <div class="trands_top_content">
-            <a href="#" class="trands_top_content">сыры на красивых картинках из интернета:какие они на вкус?</a>
+          <a class="trends-link" href="#0">Сыры на красивых картинках из интернета:какие они на вкус? </a> </h2>
+
         </div>
     </div>
  </article>
@@ -147,7 +151,7 @@
              </ul>
 
         <div class="trands_top_content">
-            <a href="#" class="trands_top_content">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</a>
+          <a class="trends-link" href="#0">Собираемся в первый поход в горы</a> </h2>
         </div>
     </div>
  </article>
@@ -164,13 +168,13 @@
              </ul>
 
         <div class="trands_top_content">
-            <a href="#" class="trands_top_content">Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?</a>
-        </div>
+          <a class="trends-link" href="#0">Сейчас в тренде: сколько витамина в лимонах</a> </h2>
+
     </div>
  </article>
 
 
-</aside>
+</div>
 
 
 <div class="page">
@@ -509,7 +513,6 @@
     <article class="example 1_example">
     
        <picture class="example_picture">
-            <a class="example-img" href="#0">
               <source srcset="images/shop-item-tablet1.jpg" media="(max-width: 1200px)">
               <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)">
               <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1201px)">
@@ -535,22 +538,19 @@
                      <span> 800 </span>
                    <span class="price_rub">₽</span>
                      </div>
-           <form class="shop">
-             <label>
+          
           <button class="shop-button" alt="кнопка В магазин">
                 <span class= "shop-button-text" class="hidden">В магазин</span>
-                 </label>
-           </button>
-               </form>
-                 </div>  
-                        </div>
-                        </div>
-                     </article>
+               
+           </button> 
+               </div>  
+                    </div>
+                    </div>
+      </article>
 
       <article class="example 2_example">
     
         <picture class="example_picture">
-             <a class="example-img" href="#0">
               <source srcset="images/shop-item-tablet2.jpg" media="(max-width: 1200px)">
               <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)">
               <source srcset="images/shop-item-desk2.jpg" media="(min-width: 1201px)">
@@ -562,7 +562,8 @@
 
               <div class="examples_content_text">
                   <h3 class="examples_titles">Кукла «Зайчик»</h3>
-            <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#" class="examples_links">весенняя серия постов</a> в блоге и несколько подкастов. </p>
+            
+                  <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#" class="examples_links">весенняя серия постов</a> в блоге и несколько подкастов. </p>
         </div>
 
             <div class="price_shop"> 
@@ -571,22 +572,20 @@
                <span class="price_rub">₽</span>
                  </div>
     
-         <form class="shop">
-              <label>
+       
            <button class="shop-button" alt="кнопка В мазин">
              <span class= "shop-button-text" class="hidden">В магазин</span>
-          </label>
+         
               </button>
-            </form>
-                        </div>
-                    </div>
+        
+             </div>
             </div>
+          </div>
                      </article>
 
        <article class="example 3_example">
     
            <picture class="example_picture">
-             <a class="example-img" href="#0">
               <source srcset="images/shop-item-tablet3.jpg" media="(max-width: 1200px)">
               <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)">
               <source srcset="images/shop-item-desk3.jpg" media="(min-width: 1201px)">
@@ -608,14 +607,13 @@
                 <span class="price_after"> 400</span>
                  <span class="price_rub">₽</span>
                             </div>
-           <form class="shop">
-                <label>
+          
           <button class="shop-button" alt="кнопка В мазин">
                 <span class= "shop-button-text" class="hidden">В магазин</span>
-            </label>
-                  </button>
-                   </form>
-                 </div>
+           
+              </button>
+                
+            </div>
              </div>
                 </div>
              </article>
